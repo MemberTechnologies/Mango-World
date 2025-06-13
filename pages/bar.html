@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mango World Bar Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/bar.css">
+</head>
+<body>    
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <a href="index.html"><img src="../media/images/logo.jpg" alt="Mango World Logo"></a>
+                </div>
+                
+                <!-- Navigation container -->
+                <div class="nav-container">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li class="dropdown">
+                                <a href="services.html">Services <i class="fas fa-chevron-down"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="bar-service.html">Bar Service</a>
+                                    <a href="restaurant-service.html">Restaurant Service</a>
+                                    <a href="nightclub-service.html">Night Club Service</a>
+                                    <a href="events-hosting.html">Events Hosting</a>
+                                    <a href="industrial-training.html">Industrial Training</a>
+                                </div>
+                            </li>
+                            <li><a href="menu.html" class="active">Menu</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            
+                            <!-- Search Container -->
+                            <div class="search-container">
+                                <div class="search-bar">
+                                    <input type="text" id="searchInput" placeholder="Search food, drinks, services...">
+                                    <button id="searchButton"><i class="fas fa-search"></i></button>
+                                </div>
+                                <div class="autocomplete-results" id="autocompleteResults"></div>
+                            </div>
+                            
+                            <!-- Cart and Checkout -->
+                            <li class="cart-checkout">
+                                <div class="cart-icon">
+                                    <a href="#" id="cartLink">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span class="cart-count">0</span>
+                                    </a>
+                                </div>
+                                <div class="checkout-btn">
+                                    <a href="#" id="checkoutLink">Checkout</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="social-container">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61572227197975" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Mobile Top Row -->
+                <div class="mobile-top">
+                    <div class="mobile-logo">
+                        <a href="index.html"><img src="../media/images/logo.jpg" alt="Mango World Logo"></a>
+                    </div>
+                    
+                    <div class="mobile-search-container">
+                        <div class="search-bar">
+                            <input type="text" id="mobileSearchInput" placeholder="Search...">
+                            <button id="mobileSearchButton"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="autocomplete-results" id="mobileAutocompleteResults"></div>
+                    </div>
+                    
+                    <div class="cart-checkout">
+                        <div class="cart-icon">
+                            <a href="#" id="mobileCartLink">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="cart-count">0</span>
+                            </a>
+                        </div>
+                        <div class="checkout-btn">
+                            <a href="#" id="mobileCheckoutLink">Checkout</a>
+                        </div>
+                    </div>
+                    
+                    <button class="menu-toggle" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-menu-header">
+                    <h3>Menu</h3>
+                    <button class="mobile-menu-close" id="mobileMenuClose">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown-mobile">
+                        <a href="services.html" id="servicesDropdown">Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content-mobile" id="mobileDropdown">
+                            <a href="bar-service.html">Bar Service</a>
+                            <a href="restaurant-service.html">Restaurant Service</a>
+                            <a href="nightclub-service.html">Night Club Service</a>
+                            <a href="events-hosting.html">Events Hosting</a>
+                            <a href="industrial-training.html">Industrial Training</a>
+                        </div>
+                    </li>
+                    <li><a href="menu.html" class="active">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="mobile-social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Service Details Section -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Bar Services</h2>
+                <p>Experience Mixology at its finest</p>
+            </div>
+            <div class="service-page-content">
+                <div class="service-page-left-col">
+                    <div class="service-page-img">
+                        <img src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Bar Service">
+                    </div>
+                    <!-- Our Service Process for Desktop -->
+                    <div class="desktop-taste-section">
+                        <h3>Our Service Process</h3>
+                        <div class="process-steps">
+                            <div class="process-step">
+                                <div class="process-number">1</div>
+                                <div class="process-text">
+                                    <h4>Consultation</h4>
+                                    <p>Our bartenders discuss your preferences and recommend options</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="process-number">2</div>
+                                <div class="process-text">
+                                    <h4>Preparation</h4>
+                                    <p>Drinks are meticulously crafted using premium ingredients</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="process-number">3</div>
+                                <div class="process-text">
+                                    <h4>Presentation</h4>
+                                    <p>Each drink is beautifully presented with artistic garnishes</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="process-number">4</div>
+                                <div class="process-text">
+                                    <h4>Enjoyment</h4>
+                                    <p>You savor your perfectly crafted beverage</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-page-text">
+                    <h2>Premium Bar Experience</h2>
+                    <p>At Mango World, our bar service is an art form. We offer two distinct bar experiences to cater to every preference:</p>
+                    
+                    <h3>General Bar</h3>
+                    <p>Our main bar features an extensive selection of premium spirits, beers, wines, and classic cocktails. With 20 rotating beers on tap and over 100 bottled options, we offer one of the most comprehensive beverage programs in Makurdi.</p>
+                    
+                    <h3>Mixology Bar</h3>
+                    <p>For a more elevated experience, our Mixology Bar features craft cocktails created by our award-winning mixologists. Using premium spirits, house-made syrups, and fresh ingredients, we create innovative cocktails that are both visually stunning and delicious.</p>
+                    
+                    <h3>Key Benefits</h3>
+                    <ul class="benefits-list">
+                        <li>Largest selection of premium spirits in Makurdi</li>
+                        <li>Seasonal cocktail menu featuring local ingredients</li>
+                        <li>Expert mixologists with international training</li>
+                        <li>Exclusive VIP bottle service</li>
+                        <li>Custom cocktail creation for special events</li>
+                    </ul>
+                    
+                    <!-- Our Service Process for Mobile -->
+                    <div class="mobile-taste-section">
+                        <h3>Our Service Process</h3>
+                        <div class="process-steps">
+                            <div class="process-step">
+                                <div class="process-number">1</div>
+                                <div class="process-text">
+                                    <h4>Consultation</h4>
+                                    <p>Our bartenders discuss your preferences and recommend options</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="process-number">2</div>
+                                <div class="process-text">
+                                    <h4>Preparation</h4>
+                                    <p>Drinks are meticulously crafted using premium ingredients</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="process-number">3</div>
+                                <div class="process-text">
+                                    <h4>Presentation</h4>
+                                    <p>Each drink is beautifully presented with artistic garnishes</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="process-number">4</div>
+                                <div class="process-text">
+                                    <h4>Enjoyment</h4>
+                                    <p>You savor your perfectly crafted beverage</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-page-buttons">
+                        <a href="booking.html" class="btn btn-green">Book Bar Experience</a>
+                        <a href="menu.html" class="btn btn-navy">Go to Main Menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signature Cocktails -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Signature Cocktails</h2>
+                <p>Our Award Winning Creations</p>
+            </div>
+            
+            <div class="menu-items-grid">
+                <!-- Item 1 -->
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="../media/images/menu/tropical-sunrise.jpg" alt="Tropical Sunrise">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Tropical Sunrise</h3>
+                        <p>A refreshing blend of mango, pineapple, and orange with a hint of grenadine</p>
+                        <div class="price">₦4,500</div>
+                        <div class="service-buttons">
+                            <a href="tropical-sunrise.html" class="btn btn-navy">Learn More</a>
+                            <button class="btn btn-green btn-order" data-item="Tropical Sunrise" data-price="4500">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Item 2 -->
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="../media/images/menu/mango-mojito.jpg" alt="Mango Mojito">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Mango Mojito</h3>
+                        <p>Our tropical twist on the classic mojito with fresh mango and mint</p>
+                        <div class="price">₦4,500</div>
+                        <div class="service-buttons">
+                            <a href="mango-mojito.html" class="btn btn-navy">Learn More</a>
+                            <button class="btn btn-green btn-order" data-item="Mango Mojito" data-price="4500">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Item 3 -->
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="../media/images/menu/golden-mule.jpg" alt="Golden Mule">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Golden Mule</h3>
+                        <p>Premium vodka, fresh lime, ginger beer, and mango puree</p>
+                        <div class="price">₦5,500</div>
+                        <div class="service-buttons">
+                            <a href="golden-mule.html" class="btn btn-navy">Learn More</a>
+                            <button class="btn btn-green btn-order" data-item="Golden Mule" data-price="5500">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Item 4 -->
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="../media/images/menu/sunset-bliss.jpg" alt="Sunset Bliss">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Sunset Bliss</h3>
+                        <p>Tequila, mango nectar, lime, and a hint of chili for a spicy finish</p>
+                        <div class="price">₦5,500</div>
+                        <div class="service-buttons">
+                            <a href="sunset-bliss.html" class="btn btn-navy">Learn More</a>
+                            <button class="btn btn-green btn-order" data-item="Sunset Bliss" data-price="5500">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Categories Section -->
+    <section class="menu-categories-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Menu Categories</h2>
+                <p>Explore our wide range of beverages</p>
+            </div>
+            
+            <div class="categories-container">
+                <div class="categories-grid" id="categoriesContainer">
+                    <!-- Categories will be dynamically added here -->
+                </div>
+                
+                <div class="categories-pagination" id="categoriesPagination">
+                    <!-- Pagination buttons will be added here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Menu Button -->
+    <section class="back-to-menu-section">
+        <div class="container">
+            <a href="menu.html" class="btn-main-menu">Go to Main Menu</a>
+        </div>
+    </section>
+
+    <!-- Dietary Information -->
+    <section class="about-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Dietary Information</h2>
+                <p>We cater to all dietary needs</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-content">
+                        <i class="fas fa-seedling" style="font-size: 3rem; color: var(--dark-green); margin-bottom: 20px;"></i>
+                        <h3 style="color: var(--dark-yellow);">Vegetarian & Vegan</h3>
+                        <p>We offer a wide selection of plant-based options clearly marked on our menu.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-content">
+                        <i class="fas fa-bread-slice" style="font-size: 3rem; color: var(--dark-green); margin-bottom: 20px;"></i>
+                        <h3 style="color: var(--dark-yellow);">Gluten-Free</h3>
+                        <p>Many of our dishes can be prepared gluten-free - just ask your server.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-content">
+                        <i class="fas fa-allergies" style="font-size: 3rem; color: var(--dark-green); margin-bottom: 20px;"></i>
+                        <h3 style="color: var(--dark-yellow);">Allergy Awareness</h3>
+                        <p>Inform us of any allergies, and our chefs will accommodate your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Mango World</h3>
+                    <p>Makurdi's premier luxury destination offering exceptional tropical experiences through vibrant flavors, premium service, and unforgettable moments.</p>
+                    <ul>
+                        <li><i class="fas fa-award"></i> Luxury Hospitality Award Winner 2025</li>
+                        <li><i class="fas fa-star"></i> Premium Tropical Experience</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="bar-service.html">Premium Bar Experience</a></li>
+                        <li><a href="restaurant-service.html">Gourmet Dining</a></li>
+                        <li><a href="nightclub-service.html">VIP Nightlife</a></li>
+                        <li><a href="events-hosting.html">Luxury Events</a></li>
+                        <li><a href="industrial-training.html">Professional Training</a></li>
+                        <li><a href="private-dining.html">Private Dining</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><a href="https://www.google.com/maps/search/?api=1&query=Beside+NNPC+Mega+Station,Otukpo+Road,Makurdi" class="contact-link" target="_blank"><i class="fas fa-map-marker-alt"></i> Beside NNPC Mega Station, Otukpo Road, Makurdi</a></li>
+                        <li><a href="tel:+2349166385000" class="contact-link"><i class="fas fa-phone-alt"></i> +2349166385000</a></li>
+                        <li><a href="mailto:mangoworldnig@gmail.com" class="contact-link"><i class="fas fa-envelope"></i> mangoworldnig@gmail.com</a></li>
+                        <li><a href="https://wa.me/2349166385000" class="contact-link" target="_blank"><i class="fab fa-whatsapp"></i> +2349166385000</a></li>
+                        <li><a href="javascript:void(0);" onclick="addToCalendar()" class="contact-link"><i class="fas fa-clock"></i> Mon-Sun: 10AM - 2AM</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <a href="privacy.html"><strong>Privacy Policy</strong></a> | <a href="terms.html"><strong>Terms of Service</strong></a>
+                <p>&copy; 2024 Mango World. | All Rights Reserved. | Designed with <i class="fas fa-heart" style="color:#FFD700;"></i> in Makurdi</p> 
+                Powered By <strong><a href="https://membertechnologies.com" target="_blank">MemberTechnologies</a></strong>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="action-buttons">
+        <div class="action-btn whatsapp" title="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span class="action-tooltip">Chat on WhatsApp</span>
+        </div>
+        <div class="action-btn chat" title="Live Chat Support">
+            <i class="fas fa-comment-dots"></i>
+            <span class="action-tooltip">Live Chat Support</span>
+        </div>
+        <div class="action-btn book" title="Book VIP Experience">
+            <i class="fas fa-calendar-alt"></i>
+            <span class="action-tooltip">Book VIP Experience</span>
+        </div>
+    </div>
+
+    <!-- Quantity Popup -->
+    <div class="popup-overlay" id="quantityPopup">
+        <div class="popup-content">
+            <h3 id="popupItemName">Item Name</h3>
+            <div class="quantity-selector">
+                <button class="quantity-btn minus">-</button>
+                <input type="number" id="itemQuantity" value="1" min="1">
+                <button class="quantity-btn plus">+</button>
+            </div>
+            <div class="popup-buttons">
+                <button class="btn btn-cancel">Cancel</button>
+                <button class="btn btn-add">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Popup -->
+    <div class="popup-overlay" id="checkoutPopup">
+        <div class="popup-content">
+            <h3>Your Order</h3>
+            <div class="cart-items" id="cartItemsContainer">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-total" id="cartTotal">
+                Total: ₦0
+            </div>
+            <div class="popup-buttons">
+                <button class="btn btn-cancel">Continue Shopping</button>
+                <button class="btn btn-add" id="placeOrderBtn">Place Order</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Options Popup -->
+    <div class="popup-overlay" id="paymentPopup">
+        <div class="popup-content">
+            <h3>Payment Options</h3>
+            <p>Select your preferred payment method</p>
+            
+            <div class="payment-options">
+                <div class="payment-option" data-payment="now">
+                    <i class="fas fa-credit-card"></i>
+                    <div>Pay Now</div>
+                </div>
+                <div class="payment-option" data-payment="later">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <div>Pay Later</div>
+                </div>
+            </div>
+            
+            <div class="popup-buttons">
+                <button class="btn btn-cancel">Back</button>
+                <button class="btn btn-add" id="confirmOrderBtn">Confirm Order</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Receipt Popup -->
+    <div class="popup-overlay" id="receiptPopup">
+        <div class="popup-content">
+            <div class="receipt">
+                <div class="receipt-header">
+                    <img src="../media/images/logo.jpg" alt="Mango World Logo">
+                    <h2>Mango World, Makurdi</h2>
+                    <p class="receipt-address">Beside NNPC Mega Station, Otukpo Road</p>
+                    <div class="receipt-contact">
+                        <p>+2349166385000</p>
+                        <p>mangoworldnig@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="receipt-details">
+                    <div class="receipt-meta">
+                        <div class="receipt-row">
+                            <span class="label">Receipt No:</span>
+                            <span class="value" id="receiptNumber">MW-070624-0123456789</span>
+                        </div>
+                        <div class="receipt-row">
+                            <span class="label">Date:</span>
+                            <span class="value" id="receiptDate">07 Jun 2024, 15:45</span>
+                        </div>
+                        <div class="receipt-row">
+                            <span class="label">Payment Status:</span>
+                            <span class="value" id="paymentStatus">Paid</span>
+                        </div>
+                    </div>
+                    
+                    <div class="receipt-items" id="receiptItems">
+                        <!-- Receipt items will be dynamically added here -->
+                    </div>
+                    
+                    <div class="receipt-total">
+                        <span>Total:</span>
+                        <span id="receiptTotal">₦0</span>
+                    </div>
+                </div>
+                
+                <div class="barcode-container">
+                    <svg id="receiptBarcode"></svg>
+                    <div class="receipt-number" id="barcodeNumber"></div>
+                </div>
+                
+                <p>Thank you for your order!</p>
+                <p><strong>www.mangoworld.com</strong></p>
+            </div>
+            
+            <div class="popup-buttons">
+                <button class="btn btn-add" id="printReceiptBtn">Print Receipt</button>
+                <button class="btn btn-add" id="closeReceiptBtn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Category Items Popup -->
+    <div class="category-popup" id="categoryPopup">
+        <div class="category-popup-content">
+            <div class="popup-header">
+                <h3 id="popupCategoryName">Category Name</h3>
+                <button class="close-popup" id="closeCategoryPopup">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="category-items-container" id="categoryItemsContainer">
+                <!-- Category items will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div class="notification" id="notification">
+        <div class="notification-content">
+            <i class="fas fa-check-circle"></i>
+            <span id="notificationMessage"></span>
+        </div>
+    </div>
+    
+    <!-- Notification Sound -->
+    <audio id="notificationSound">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-bell-notification-933.mp3" type="audio/mpeg">
+    </audio>
+<script src="../js/bar-services.js"></script>
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Mango World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <a href="../index.html"><img src="../media/images/logo.jpg" alt="Mango World Logo"></a>
+                </div>
+                
+                <!-- Navigation container -->
+                <div class="nav-container">
+                    <nav>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li class="dropdown">
+                                <a href="services.html">Services <i class="fas fa-chevron-down"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="bar.html">Bar Service</a>
+                                    <a href="restaurant.html">Restaurant Service</a>
+                                    <a href="club.html">Night Club Service</a>
+                                    <a href="events.html">Events Hosting</a>
+                                    <a href="internship.html">Internship</a>
+                                </div>
+                            </li>
+                            <li><a href="menu.html" class="active">Menu</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            
+                            <!-- Search Container -->
+                            <div class="search-container">
+                                <div class="search-bar">
+                                    <input type="text" id="searchInput" placeholder="Search food, drinks, services...">
+                                    <button id="searchButton"><i class="fas fa-search"></i></button>
+                                </div>
+                                <div class="autocomplete-results" id="autocompleteResults"></div>
+                            </div>
+                            
+                            <!-- Cart and Checkout -->
+                            <li class="cart-checkout">
+                                <div class="cart-icon">
+                                    <a href="#" id="cartLink">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span class="cart-count">0</span>
+                                    </a>
+                                </div>
+                                <div class="checkout-btn">
+                                    <a href="#" id="checkoutLink">Checkout</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="social-container">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61572227197975" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Mobile Top Row -->
+                <div class="mobile-top">
+                    <div class="mobile-logo">
+                        <a href="../index.html"><img src="../media/images/logo.jpg" alt="Mango World Logo"></a>
+                    </div>
+                    
+                    <div class="mobile-search-container">
+                        <div class="search-bar">
+                            <input type="text" id="mobileSearchInput" placeholder="Search...">
+                            <button id="mobileSearchButton"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="autocomplete-results" id="mobileAutocompleteResults"></div>
+                    </div>
+                    
+                    <div class="cart-checkout">
+                        <div class="cart-icon">
+                            <a href="#" id="mobileCartLink">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="cart-count">0</span>
+                            </a>
+                        </div>
+                        <div class="checkout-btn">
+                            <a href="#" id="mobileCheckoutLink">Checkout</a>
+                        </div>
+                    </div>
+                    
+                    <button class="menu-toggle" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-menu-header">
+                    <h3>Menu</h3>
+                    <button class="mobile-menu-close" id="mobileMenuClose">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown-mobile">
+                        <a href="services.html" id="servicesDropdown">Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content-mobile" id="mobileDropdown">
+                            <a href="bar.html">Bar Service</a>
+                            <a href="restaurant.html">Restaurant Service</a>
+                            <a href="club.html">Night Club Service</a>
+                            <a href="events.html">Events Hosting</a>
+                            <a href="industrial-training.html">	nternship</a>
+                        </div>
+                    </li>
+                    <li><a href="menu.html" class="active">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="mobile-social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+   
+
+    <!-- Featured Items Section -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Items</h2>
+                Customer favorites and chef's recommendations
+            </div>
+            
+            <div class="menu-items-grid">
+
+
+                <!-- Item 1 -->
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Tropical Sunrise">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Tropical Sunrise</h3>
+                        <p>A refreshing blend of mango, pineapple, and orange with a hint of grenadine</p>
+                        <div class="price">₦3,500</div>
+                        <a href="tropical-sunrise.html" class="btn">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Item 2 -->
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Grilled Mango BBQ Fish">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Grilled Mango BBQ Fish</h3>
+                        <p>Fresh fish grilled to perfection with our signature mango BBQ sauce<br>.</p>
+                        <div class="price">₦10,500</div>
+                        <a href="grilled-mango-bbq-fish.html" class="btn">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Item 3 -->
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Mango Mojito">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Mango Mojito</h3>
+                        <p>Our tropical twist on the classic mojito with fresh mango and mint<br>.</p>
+                        <div class="price">₦4,000</div>
+                        <a href="mango-mojito.html" class="btn">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Item 4 -->
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Mango Tango Pizza">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Mango Tango Pizza</h3>
+                        <p>Wood-fired pizza with mango, chicken, and spicy pepper sauce<br>.</p>
+                        <div class="price">₦5,500</div>
+                        <a href="mango-tango-pizza.html" class="btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dietary Information -->
+    <section class="about-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Dietary Information</h2>
+                We cater to all dietary needs
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-content">
+                        <i class="fas fa-seedling" style="font-size: 3rem; color: var(--dark-green); margin-bottom: 20px;"></i>
+                        <h3 style="color: var(--dark-yellow);">Vegetarian & Vegan</h3>
+                        <p>We offer a wide selection of plant-based options clearly marked on our menu.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-content">
+                        <i class="fas fa-bread-slice" style="font-size: 3rem; color: var(--dark-green); margin-bottom: 20px;"></i>
+                        <h3 style="color: var(--dark-yellow);">Gluten-Free</h3>
+                        <p>Many of our dishes can be prepared gluten-free - just ask your server.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-content">
+                        <i class="fas fa-allergies" style="font-size: 3rem; color: var(--dark-green); margin-bottom: 20px;"></i>
+                        <h3 style="color: var(--dark-yellow);">Allergy Awareness</h3>
+                        <p>Inform us of any allergies, and our chefs will accommodate your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Mango World</h3>
+                    <p>Makurdi's premier luxury destination offering exceptional tropical experiences through vibrant flavors, premium service, and unforgettable moments.</p>
+                    <ul>
+                        <li><i class="fas fa-award"></i> Luxury Hospitality Award Winner 2025</li>
+                        <li><i class="fas fa-star"></i> Premium Tropical Experience</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="bar-service.html">Premium Bar Experience</a></li>
+                        <li><a href="restaurant-service.html">Gourmet Dining</a></li>
+                        <li><a href="nightclub-service.html">VIP Nightlife</a></li>
+                        <li><a href="events-hosting.html">Luxury Events</a></li>
+                        <li><a href="industrial-training.html">Professional Training</a></li>
+                        <li><a href="private-dining.html">Private Dining</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Beside NNPC Mega Station, Otukpo Road, Makurdi</li>
+                        <li><i class="fas fa-phone-alt"></i> +2349166385000</li>
+                        <li><i class="fas fa-envelope"></i> mangoworldnig@gmail.com</li>
+                        <li><i class="fab fa-whatsapp"></i> +2349166385000</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sun: 10AM - 2AM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <a href="privacy.html"><strong>Privacy Policy</strong></a> | <a href="terms.html"><strong>Terms of Service</strong></a>
+<p>&copy; 2024 Mango World. | All Rights Reserved. | Designed with <i class="fas fa-heart" style="color:#FFD700;"></i> in Makurdi</p> 
+Powered By <strong>MemberTechnologies</strong>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="action-buttons">
+        <div class="action-btn whatsapp" title="">
+            <i class="fab fa-whatsapp"></i>
+            <span class="action-tooltip">Chat on WhatsApp</span>
+        </div>
+        <div class="action-btn chat" title="">
+            <i class="fas fa-comment-dots"></i>
+            <span class="action-tooltip">Live Chat Support</span>
+        </div>
+        <div class="action-btn book" title="">
+            <i class="fas fa-calendar-alt"></i>
+            <span class="action-tooltip">Book VIP Experience</span>
+        </div>
+    </div>
+
+    <script src="../js/menu.js"></script>
+</body>
+</html>

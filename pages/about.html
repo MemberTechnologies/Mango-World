@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Mango World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/about.css">
+</head>
+<body>
+     <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <a href="../index.html"><img src="../media/images/logo.jpg" alt="Mango World Logo"></a>
+                </div>
+                
+                <!-- Navigation container -->
+                <div class="nav-container">
+                    <nav>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="about.html"  class="active">About</a></li>
+                            <li class="dropdown">
+                                <a href="services.html">Services <i class="fas fa-chevron-down"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="bar.html">Bar Service</a>
+                                    <a href="restaurant.html">Restaurant Service</a>
+                                    <a href="club.html">Night Club Service</a>
+                                    <a href="events.html">Events Hosting</a>
+                                    <a href="internship.html">Internship</a>
+                                </div>
+                            </li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            
+                            <!-- Search Container -->
+                            <div class="search-container">
+                                <div class="search-bar">
+                                    <input type="text" id="searchInput" placeholder="Search food, drinks, services...">
+                                    <button id="searchButton"><i class="fas fa-search"></i></button>
+                                </div>
+                                <div class="autocomplete-results" id="autocompleteResults"></div>
+                            </div>
+                            
+                            <!-- Cart and Checkout -->
+                            <li class="cart-checkout">
+                                <div class="cart-icon">
+                                    <a href="#" id="cartLink">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span class="cart-count">0</span>
+                                    </a>
+                                </div>
+                                <div class="checkout-btn">
+                                    <a href="#" id="checkoutLink">Checkout</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="social-container">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61572227197975" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Mobile Top Row -->
+                <div class="mobile-top">
+                    <div class="mobile-logo">
+                        <a href="../index.html"><img src="../media/images/logo.jpg" alt="Mango World Logo"></a>
+                    </div>
+                    
+                    <div class="mobile-search-container">
+                        <div class="search-bar">
+                            <input type="text" id="mobileSearchInput" placeholder="Search...">
+                            <button id="mobileSearchButton"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="autocomplete-results" id="mobileAutocompleteResults"></div>
+                    </div>
+                    
+                    <div class="cart-checkout">
+                        <div class="cart-icon">
+                            <a href="#" id="mobileCartLink">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="cart-count">0</span>
+                            </a>
+                        </div>
+                        <div class="checkout-btn">
+                            <a href="#" id="mobileCheckoutLink">Checkout</a>
+                        </div>
+                    </div>
+                    
+                    <button class="menu-toggle" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-menu-header">
+                    <h3>Menu</h3>
+                    <button class="mobile-menu-close" id="mobileMenuClose">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html"  class="active">About</a></li>
+                    <li class="dropdown-mobile">
+                        <a href="services.html" id="servicesDropdown">Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content-mobile" id="mobileDropdown">
+                            <a href="bar.html">Bar Service</a>
+                            <a href="restaurant.html">Restaurant Service</a>
+                            <a href="club.html">Night Club Service</a>
+                            <a href="events.html">Events Hosting</a>
+                            <a href="internship.html">Industrial Training</a>
+                        </div>
+                    </li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="mobile-social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+   <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Mango World</h2>
+                <p>Luxury, flavor, and unforgettable experiences</p>
+            </div>
+           
+ 
+<div class="about-page-img">
+                        <img src="../media/images/entrance.jpg" alt="Bar Service">
+                    </div>
+
+
+
+            <div class="about-content">
+                <div class="about-left">
+                    <div class="about-text">
+                        <h2>Welcome to Luxury</h2>
+                        <p>Founded in 2024, Mango World has quickly established itself as Makurdi's premier luxury entertainment destination. Our mission is to provide an unparalleled experience that combines tropical elegance, exquisite flavors, and exceptional service.</p>
+                        <p>At Mango World, we pride ourselves on sourcing the finest local ingredients to create our signature drinks and dishes. Our team of world-class mixologists and chefs continuously innovate to bring you unique and memorable flavors.</p>
+                        <p>Our venue features three distinct experiences under one roof - a sophisticated bar, a gourmet restaurant, and an electrifying nightclub. Each space is meticulously designed to transport you to a tropical paradise while maintaining the highest standards of luxury.</p>
+                        
+                        <div class="ceo-info">
+                            <div class="ceo-img">
+                                <img src="../media/images/atom.jpg" alt="CEO">
+                            </div>
+                            <div class="ceo-details">
+                                <h2>Atom Lim</h2>
+                                <h5>Founder & CEO of Mango World</h5>
+                                <p>"At Mango World, we're not just building a luxury hospitality brand — we're nurturing a vibrant community where every team member is seen, valued, and empowered. This is more than a business; it's a family where talents are discovered, groomed, and given the space to thrive. We believe in excellence, not only in the experiences we offer our guests, but in the culture we cultivate behind the scenes. Together, we are creating something truly exceptional — a home for both ambition and belonging."</p>
+                                <button class="connect-btn">
+                                    <i class="fas fa-comment-alt"></i> Connect with Atom
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-right">
+                    <div class="vm-section">
+                        <div class="vm-box">
+                            <h2><i class="fas fa-eye"></i> Our Vision</h2>
+                            <p>To become the most celebrated luxury entertainment destination in Nigeria, renowned for creating extraordinary experiences that delight all the senses. We envision a tropical oasis where every visit transports guests to a world of elegance, flavor, and vibrant energy that sets the standard for premium hospitality.</p>
+                        </div>
+                        
+                        <div class="vm-box">
+                            <h2><i class="fas fa-bullseye"></i> Our Mission</h2>
+                            <p>To craft unforgettable moments through exceptional hospitality, innovative cuisine, and vibrant entertainment, while nurturing our team and positively impacting our community. We are committed to sustainable practices, supporting local producers, and creating a space where both guests and staff feel valued and inspired.</p>
+                        </div>
+                        
+                        <div class="vm-box">
+                            <h2><i class="fas fa-calendar-check"></i> Our Promise</h2>
+                            <p>Every visit to Mango World guarantees an unparalleled experience where luxury meets authenticity. We promise meticulous attention to detail, innovative flavors crafted from the freshest ingredients, and service that anticipates your needs while exceeding your expectations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Core Values</h2>
+                <p>The principles that guide everything we do</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-content">
+                        <i class="fas fa-star" style="font-size: 3rem; color: var(--light-yellow); margin-bottom: 20px;"></i>
+                        <h3>Excellence</h3>
+                        <p>We strive for perfection in every detail, from our cocktails to our service, ensuring an unparalleled experience for every guest. Continuous improvement is at the heart of our operations.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-content">
+                        <i class="fas fa-leaf" style="font-size: 3rem; color: var(--light-yellow); margin-bottom: 20px;"></i>
+                        <h3>Sustainability</h3>
+                        <p>We source ingredients locally whenever possible and implement eco-friendly practices throughout our operations. Our commitment extends to minimizing waste and supporting ethical suppliers.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-content">
+                        <i class="fas fa-heart" style="font-size: 3rem; color: var(--light-yellow); margin-bottom: 20px;"></i>
+                        <h3>Community</h3>
+                        <p>We're committed to being an integral part of Makurdi, supporting local artists, businesses, and initiatives. Our venue serves as a cultural hub that celebrates regional talent.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-content">
+                        <i class="fas fa-lightbulb" style="font-size: 3rem; color: var(--light-yellow); margin-bottom: 20px;"></i>
+                        <h3>Innovation</h3>
+                        <p>Our team constantly pushes boundaries to create unique flavor combinations and experiences. We embrace creativity in every aspect of our hospitality journey.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-content">
+                        <i class="fas fa-hands-helping" style="font-size: 3rem; color: var(--light-yellow); margin-bottom: 20px;"></i>
+                        <h3>Integrity</h3>
+                        <p>We operate with transparency, honesty, and fairness in all our dealings. Trust is the foundation of our relationships with guests, staff, and partners.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-content">
+                        <i class="fas fa-laugh" style="font-size: 3rem; color: var(--light-yellow); margin-bottom: 20px;"></i>
+                        <h3>Joyful Service</h3>
+                        <p>We believe hospitality should be delivered with genuine warmth and enthusiasm. Our team takes pride in creating moments of delight for every guest.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Team</h2>
+                <p>Meet the experts behind your experience</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="../media/images/mixologist.jpg" alt="Mixology Team">
+                    </div>
+                    <div class="service-content">
+                        <h3>Master Mixologists</h3>
+                        <p>Our award-winning team, led by <strong>Emerald Oche</strong>, creates innovative cocktails using premium spirits and fresh ingredients. With over 10 years of experience, they transform mixology into an art form.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="../media/images/chef.jpg" alt="Culinary Team">
+                    </div>
+                    <div class="service-content">
+                        <h3>Gourmet Chefs</h3>
+                        <p>Led by <strong>Executive Chef Joe Adeke</strong>, our culinary team creates unforgettable dining experiences. Their farm-to-table approach highlights Nigeria's rich culinary heritage with modern techniques.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="../media/images/experts.jpg" alt="Hospitality Team">
+                    </div>
+                    <div class="service-content">
+                        <h3>Hospitality Experts</h3>
+                        <p>Our service team is trained to anticipate your needs and provide impeccable attention to detail. With backgrounds in luxury resorts worldwide, they elevate service to an art form.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Mango World</h3>
+                    <p>Makurdi's premier luxury destination offering exceptional tropical experiences through vibrant flavors, premium service, and unforgettable moments.</p>
+                    <ul>
+                        <li><i class="fas fa-award"></i> Luxury Hospitality Award Winner 2025</li>
+                        <li><i class="fas fa-star"></i> Premium Tropical Experience</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="bar-service.html">Premium Bar Experience</a></li>
+                        <li><a href="restaurant-service.html">Gourmet Dining</a></li>
+                        <li><a href="nightclub-service.html">VIP Nightlife</a></li>
+                        <li><a href="events-hosting.html">Luxury Events</a></li>
+                        <li><a href="industrial-training.html">Professional Training</a></li>
+                        <li><a href="private-dining.html">Private Dining</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Beside NNPC Mega Station, Otukpo Road, Makurdi</li>
+                        <li><i class="fas fa-phone-alt"></i> +2349166385000</li>
+                        <li><i class="fas fa-envelope"></i> mangoworldnig@gmail.com</li>
+                        <li><i class="fab fa-whatsapp"></i> +2349166385000</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sun: 10AM - 2AM</li>
+                    </ul>
+                </div>
+            </div>
+            
+           <div class="footer-bottom">
+                <a href="privacy.html"><strong>Privacy Policy</strong></a> | <a href="terms.html"><strong>Terms of Service</strong></a>
+<p>&copy; 2024 Mango World. | All Rights Reserved. | Designed with <i class="fas fa-heart" style="color:#FFD700;"></i> in Makurdi</p> 
+Powered By <strong>MemberTechnologies</strong>
+            </div>
+        </div>
+    </footer>
+
+
+     <!-- Floating Action Buttons -->
+    <div class="action-buttons">
+        <div class="action-btn whatsapp" title="">
+            <i class="fab fa-whatsapp"></i>
+            <span class="action-tooltip">Chat on WhatsApp</span>
+        </div>
+        <div class="action-btn chat" title="">
+            <i class="fas fa-comment-dots"></i>
+            <span class="action-tooltip">Live Chat Support</span>
+        </div>
+        <div class="action-btn book" title="">
+            <i class="fas fa-calendar-alt"></i>
+            <span class="action-tooltip">Book VIP Experience</span>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
