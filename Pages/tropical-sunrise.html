@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tropical Sunrise - Mango World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/tropical-sunrise.css">
+</head>
+<body>    
+
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <a href="../index.html"><img src="../media/images/logo.jpg" alt="Mango World Logo"></a>
+                </div>
+                
+                <!-- Navigation container -->
+                <div class="nav-container">
+                    <nav>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li class="dropdown">
+                                <a href="services.html">Services <i class="fas fa-chevron-down"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="bar.html">Bar Service</a>
+                                    <a href="restaurant.html">Restaurant Service</a>
+                                    <a href="club.html">Night Club Service</a>
+                                    <a href="events.html">Events Hosting</a>
+                                    <a href="internship.html">Internship</a>
+                                </div>
+                            </li>
+                            <li><a href="menu.html" class="active">Menu</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            
+                            <!-- Search Container -->
+                            <div class="search-container">
+                                <div class="search-bar">
+                                    <input type="text" id="searchInput" placeholder="Search food, drinks, services...">
+                                    <button id="searchButton"><i class="fas fa-search"></i></button>
+                                </div>
+                                <div class="autocomplete-results" id="autocompleteResults"></div>
+                            </div>
+                            
+                            <!-- Cart and Checkout -->
+                            <li class="cart-checkout">
+                                <div class="cart-icon">
+                                    <a href="#" id="cartLink">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span class="cart-count">0</span>
+                                    </a>
+                                </div>
+                                <div class="checkout-btn">
+                                    <a href="#" id="checkoutLink">Checkout</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="social-container">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61572227197975" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Mobile Top Row -->
+                <div class="mobile-top">
+                    <div class="mobile-logo">
+                        <a href="../index.html"><img src="../media/images/logo.jpg" alt="Mango World Logo"></a>
+                    </div>
+                    
+                    <div class="mobile-search-container">
+                        <div class="search-bar">
+                            <input type="text" id="mobileSearchInput" placeholder="Search...">
+                            <button id="mobileSearchButton"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="autocomplete-results" id="mobileAutocompleteResults"></div>
+                    </div>
+                    
+                    <div class="cart-checkout">
+                        <div class="cart-icon">
+                            <a href="#" id="mobileCartLink">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="cart-count">0</span>
+                            </a>
+                        </div>
+                        <div class="checkout-btn">
+                            <a href="#" id="mobileCheckoutLink">Checkout</a>
+                        </div>
+                    </div>
+                    
+                    <button class="menu-toggle" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-menu-header">
+                    <h3>Menu</h3>
+                    <button class="mobile-menu-close" id="mobileMenuClose">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown-mobile">
+                        <a href="services.html" id="servicesDropdown">Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content-mobile" id="mobileDropdown">
+                            <a href="bar.html">Bar Service</a>
+                            <a href="restaurant.html">Restaurant Service</a>
+                            <a href="club.html">Night Club Service</a>
+                            <a href="events.html">Events Hosting</a>
+                            <a href="industrial-training.html">	nternship</a>
+                        </div>
+                    </li>
+                    <li><a href="menu.html" class="active">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="mobile-social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Body Content - Fixed Layout -->
+    <div class="body-content">
+        <!-- Menu Item Details -->
+        <section class="menu-item-page">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Tropical Sunrise</h2>
+                    <p>Our signature cocktail that captures the essence of paradise</p>
+                </div>
+                <div class="menu-item-container">
+                    <div class="menu-item-img">
+                        <div class="column">
+                            <img src="../media/images/menu/tropical-sunrise.jpg" alt="Tropical Sunrise">
+                            <p class="image-caption">Experience the vibrant colors and tropical flavors of our signature cocktail</p>
+                        </div>
+
+                        <div class="desktop-taste-section">
+                            <h2>Taste Profile</h2>
+                            <p>The Tropical Sunrise offers a perfect balance of sweet and tangy flavors. The initial taste is bright and citrusy from the orange and pineapple, followed by the lush sweetness of mango. The vodka provides a clean, smooth finish that doesn't overpower the fruit flavors. As you drink, the layers gradually blend, creating an evolving flavor experience.</p>
+                            
+                            <div class="nutrition-facts">
+                                <h3>Nutritional Information (per serving)</h3>
+                                <table class="nutrition-table">
+                                    <tr>
+                                        <th>Calories</th>
+                                        <td>220</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Total Fat</th>
+                                        <td>0g</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Sodium</th>
+                                        <td>10mg</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Total Carbohydrates</th>
+                                        <td>28g</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Sugars</th>
+                                        <td>24g</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Protein</th>
+                                        <td>1g</td>
+                                    </tr>
+                                </table>
+                                <p style="text-align: center; margin-top: 10px; font-size: 0.9rem;">*Percent Daily Values are based on a 2,000 calorie diet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item-details">
+                        <h1>Tropical Sunrise Description</h1>
+                        <span class="price">₦3,500</span>
+                        <p>A visually stunning cocktail that layers mango puree, pineapple juice, and orange juice to create a beautiful sunrise effect. Topped with a splash of grenadine that slowly sinks to create a vibrant gradient reminiscent of a tropical sunrise.</p>
+                        
+                        <h2>History & Origin</h2>
+                        <p>Created in 2024 by our head mixologist, <strong>Emerald Oche</strong>, the Tropical Sunrise was inspired by the breathtaking sunrises he witnessed while moving through River Benue's bridge to the North Bank. Oche wanted to capture the vibrant colors and refreshing flavors of tropical mornings in a glass, creating what has become our most popular signature cocktail.</p>
+                        
+                        <h2>Ingredients</h2>
+                        <ul>
+                            <li>2 oz premium vodka</li>
+                            <li>1 oz fresh mango puree</li>
+                            <li>2 oz pineapple juice</li>
+                            <li>2 oz fresh orange juice</li>
+                            <li>0.5 oz grenadine</li>
+                            <li>Fresh mint for garnish</li>
+                            <li>Orange slice for garnish</li>
+                        </ul>
+                        
+                        <h2>Preparation</h2>
+                        <ol>
+                            <li>Fill a highball glass with ice</li>
+                            <li>Add mango puree and vodka, stir gently</li>
+                            <li>Slowly pour pineapple juice over the back of a spoon to layer</li>
+                            <li>Repeat with orange juice to create distinct layers</li>
+                            <li>Drizzle grenadine over the top and let it sink naturally</li>
+                            <li>Garnish with fresh mint and an orange slice</li>
+                            <li>Serve with a straw and enjoy the sunrise!</li>
+                        </ol>
+                        
+                        <!-- Mobile Taste Section -->
+                        <div class="mobile-taste-section">
+                            <h2>Taste Profile</h2>
+                            <p>The Tropical Sunrise offers a perfect balance of sweet and tangy flavors. The initial taste is bright and citrusy from the orange and pineapple, followed by the lush sweetness of mango. The vodka provides a clean, smooth finish that doesn't overpower the fruit flavors. As you drink, the layers gradually blend, creating an evolving flavor experience.</p>
+                            
+                            <div class="nutrition-facts">
+                                <h3>Nutritional Information (per serving)</h3>
+                                <table class="nutrition-table">
+                                    <tr>
+                                        <th>Calories</th>
+                                        <td>220</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Total Fat</th>
+                                        <td>0g</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Sodium</th>
+                                        <td>10mg</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Total Carbohydrates</th>
+                                        <td>28g</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Sugars</th>
+                                        <td>24g</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Protein</th>
+                                        <td>1g</td>
+                                    </tr>
+                                </table>
+                                <p style="text-align: center; margin-top: 10px; font-size: 0.9rem;">*Percent Daily Values are based on a 2,000 calorie diet.</p>
+                            </div>
+                        </div>
+                        
+                        <a href="#" class="btn btn-green" id="addTropicalSunrise">Add to Order</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pairing Suggestions -->
+        <section class="about-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Perfect Pairings</h2>
+                    <p>Complement your Tropical Sunrise with these dishes</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="../media/images/menu/coconut-shrimp.jpg" alt="Coconut Shrimp">
+                        </div>
+                        <div class="service-content">
+                            <h3>Coconut Shrimp</h3>
+                            <p>Crispy shrimp with a tropical coconut crust served with mango dipping sauce</p>
+                            <div class="price">₦5,200</div>
+                            <div class="service-buttons">
+                                <a href="menu-details/coconut-shrimp.html" class="btn btn-navy">Learn More</a>
+                                <button class="btn btn-green btn-order" data-item="Coconut Shrimp" data-price="5200">Add to Order</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="../media/images/menu/tuna-poke-bowl.jpg" alt="Tuna Poke Bowl">
+                        </div>
+                        <div class="service-content">
+                            <h3>Tuna Poke Bowl</h3>
+                            <p>Fresh tuna, mango, avocado, and rice with a citrus-soy dressing</p>
+                            <div class="price">₦6,500</div>
+                            <div class="service-buttons">
+                                <a href="menu-details/tuna-poke-bowl.html" class="btn btn-navy">Learn More</a>
+                                <button class="btn btn-green btn-order" data-item="Tuna Poke Bowl" data-price="6500">Add to Order</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="../media/images/menu/mango-chicken-skewers.jpg">
+                        </div>
+                        <div class="service-content">
+                            <h3>Mango Chicken Skewers</h3>
+                            <p>Grilled chicken skewers glazed with spicy mango barbecue sauce</p>
+                            <div class="price">₦4,800</div>
+                            <div class="service-buttons">
+                                <a href="menu-details/mango-chicken-skewers.html" class="btn btn-navy">Learn More</a>
+                                <button class="btn btn-green btn-order" data-item="Mango Chicken Skewers" data-price="4800">Add to Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW: Back to Menu Section -->
+        <section class="back-to-menu-section">
+            <div class="container">
+                <div class="back-to-menu-container">
+                    <a href="menu.html" class="btn btn-navy">Back to Main Menu</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-container">
+                    <div class="footer-col">
+                        <h3>Mango World</h3>
+                        <p>Makurdi's premier luxury destination offering exceptional tropical experiences through vibrant flavors, premium service, and unforgettable moments.</p>
+                        <ul>
+                            <li><i class="fas fa-award"></i> Luxury Hospitality Award Winner 2025</li>
+                            <li><i class="fas fa-star"></i> Premium Tropical Experience</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3>Our Services</h3>
+                        <ul>
+                            <li><a href="bar-service.html">Premium Bar Experience</a></li>
+                            <li><a href="restaurant-service.html">Gourmet Dining</a></li>
+                            <li><a href="nightclub-service.html">VIP Nightlife</a></li>
+                            <li><a href="events-hosting.html">Luxury Events</a></li>
+                            <li><a href="industrial-training.html">Professional Training</a></li>
+                            <li><a href="private-dining.html">Private Dining</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3>Contact Info</h3>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> Beside NNPC Mega Station, Otukpo Road, Makurdi</li>
+                            <li><i class="fas fa-phone-alt"></i> +2349166385000</li>
+                            <li><i class="fas fa-envelope"></i> mangoworldnig@gmail.com</li>
+                            <li><i class="fab fa-whatsapp"></i> +2349166385000</li>
+                            <li><i class="fas fa-clock"></i> Mon-Sun: 10AM - 2AM</li>
+                        </ul>
+                    </div>
+                </div>
+                
+               <div class="footer-bottom">
+                    <a href="privacy.html"><strong>Privacy Policy</strong></a> | <a href="terms.html"><strong>Terms of Service</strong></a>
+                    <p>&copy; 2024 Mango World. | All Rights Reserved. | Designed with <i class="fas fa-heart" style="color:#FFD700;"></i> in Makurdi</p> 
+                    <p>Powered By <strong>MemberTechnologies</strong></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Floating Action Buttons -->
+    <div class="action-buttons">
+        <div class="action-btn whatsapp" title="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span class="action-tooltip">Chat on WhatsApp</span>
+        </div>
+        <div class="action-btn chat" title="Live Chat Support">
+            <i class="fas fa-comment-dots"></i>
+            <span class="action-tooltip">Live Chat Support</span>
+        </div>
+        <div class="action-btn book" title="Book VIP Experience">
+            <i class="fas fa-calendar-alt"></i>
+            <span class="action-tooltip">Book VIP Experience</span>
+        </div>
+    </div>
+
+    <!-- Quantity Popup -->
+    <div class="popup-overlay" id="quantityPopup">
+        <div class="popup-content">
+            <h3 id="popupItemName">Item Name</h3>
+            <div class="quantity-selector">
+                <button class="quantity-btn minus">-</button>
+                <input type="number" id="itemQuantity" value="1" min="1">
+                <button class="quantity-btn plus">+</button>
+            </div>
+            <div class="popup-buttons">
+                <button class="btn btn-cancel">Cancel</button>
+                <button class="btn btn-add">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Popup -->
+    <div class="popup-overlay" id="checkoutPopup">
+        <div class="popup-content">
+            <h3>Your Order</h3>
+            <div class="cart-items" id="cartItemsContainer">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-total" id="cartTotal">
+                Total: ₦0
+            </div>
+            <div class="popup-buttons">
+                <button class="btn btn-cancel">Continue Shopping</button>
+                <button class="btn btn-add" id="placeOrderBtn">Place Order</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Options Popup -->
+    <div class="popup-overlay" id="paymentPopup">
+        <div class="popup-content">
+            <h3>Payment Options</h3>
+            <p>Select your preferred payment method</p>
+            
+            <div class="payment-options">
+                <div class="payment-option" data-payment="now">
+                    <i class="fas fa-credit-card"></i>
+                    <div>Pay Now</div>
+                </div>
+                <div class="payment-option" data-payment="later">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <div>Pay Later</div>
+                </div>
+            </div>
+            
+            <div class="popup-buttons">
+                <button class="btn btn-cancel">Back</button>
+                <button class="btn btn-add" id="confirmOrderBtn">Confirm Order</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Receipt Popup -->
+    <div class="popup-overlay" id="receiptPopup">
+        <div class="popup-content">
+            <div class="receipt">
+                <div class="receipt-header">
+                    <img src="../media/images/logo.jpg" alt="Mango World Logo">
+                    <h2>Mango World, Makurdi</h2>
+                    <p class="receipt-address">Beside NNPC Mega Station, Otukpo Road</p>
+                    <div class="receipt-contact">
+                        <p>+2349166385000</p>
+                        <p>mangoworldnig@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="receipt-details">
+                    <div class="receipt-meta">
+                        <div class="receipt-row">
+                            <span class="label">Receipt No:</span>
+                            <span class="value" id="receiptNumber">MW-070624-0123456789</span>
+                        </div>
+                        <div class="receipt-row">
+                            <span class="label">Date:</span>
+                            <span class="value" id="receiptDate">07 Jun 2024, 15:45</span>
+                        </div>
+                        <div class="receipt-row">
+                            <span class="label">Payment Status:</span>
+                            <span class="value" id="paymentStatus">Paid</span>
+                        </div>
+                    </div>
+                    
+                    <div class="receipt-items" id="receiptItems">
+                        <!-- Receipt items will be dynamically added here -->
+                    </div>
+                    
+                    <div class="receipt-total">
+                        <span>Total:</span>
+                        <span id="receiptTotal">₦0</span>
+                    </div>
+                </div>
+                
+                <div class="barcode-container">
+                    <svg id="receiptBarcode"></svg>
+                    <div class="receipt-number" id="barcodeNumber"></div>
+                </div>
+                
+                <p>Thank you for your order!</p>
+                <p><strong>www.mangoworld.com</strong></p>
+            </div>
+            
+            <div class="popup-buttons">
+                <button class="btn btn-add" id="printReceiptBtn">Print Receipt</button>
+                <button class="btn btn-add" id="closeReceiptBtn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div class="notification" id="notification">
+        <div class="notification-content">
+            <i class="fas fa-check-circle"></i>
+            <span id="notificationMessage"></span>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+    <script src="../js/tropical-sunrise.js"></script>
+</body>
+</html>

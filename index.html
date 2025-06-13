@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mango World - Tropical Bar & Lounge</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+     <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <a href="index.html"><img src="media/images/logo.jpg" alt="Mango World Logo"></a>
+                </div>
+                
+                <!-- Navigation container -->
+                <div class="nav-container">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html"  class="active">Home</a></li>
+                            <li><a href="pages/about.html">About</a></li>
+                            <li class="dropdown">
+                                <a href="pages/services.html">Services <i class="fas fa-chevron-down"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="pages/bar.html">Bar Service</a>
+                                    <a href="pages/restaurant.html">Restaurant Service</a>
+                                    <a href="pages/club.html">Night Club Service</a>
+                                    <a href="pages/events.html">Events Hosting</a>
+                                    <a href="pages/internship.html">Internship</a>
+                                </div>
+                            </li>
+                            <li><a href="pages/menu.html">Menu</a></li>
+                            <li><a href="pages/contact.html">Contact</a></li>
+                            
+                            <!-- Search Container -->
+                            <div class="search-container">
+                                <div class="search-bar">
+                                    <input type="text" id="searchInput" placeholder="Search food, drinks, services...">
+                                    <button id="searchButton"><i class="fas fa-search"></i></button>
+                                </div>
+                                <div class="autocomplete-results" id="autocompleteResults"></div>
+                            </div>
+                            
+                            <!-- Cart and Checkout -->
+                            <li class="cart-checkout">
+                                <div class="cart-icon">
+                                    <a href="#" id="cartLink">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span class="cart-count">0</span>
+                                    </a>
+                                </div>
+                                <div class="checkout-btn">
+                                    <a href="#" id="checkoutLink">Checkout</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="social-container">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61572227197975" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Mobile Top Row -->
+                <div class="mobile-top">
+                    <div class="mobile-logo">
+                        <a href="index.html"><img src="../media/images/logo.jpg" alt="Mango World Logo"></a>
+                    </div>
+                    
+                    <div class="mobile-search-container">
+                        <div class="search-bar">
+                            <input type="text" id="mobileSearchInput" placeholder="Search...">
+                            <button id="mobileSearchButton"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="autocomplete-results" id="mobileAutocompleteResults"></div>
+                    </div>
+                    
+                    <div class="cart-checkout">
+                        <div class="cart-icon">
+                            <a href="#" id="mobileCartLink">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="cart-count">0</span>
+                            </a>
+                        </div>
+                        <div class="checkout-btn">
+                            <a href="#" id="mobileCheckoutLink">Checkout</a>
+                        </div>
+                    </div>
+                    
+                    <button class="menu-toggle" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-menu-header">
+                    <h3>Menu</h3>
+                    <button class="mobile-menu-close" id="mobileMenuClose">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li class="dropdown-mobile">
+                        <a href="pages/services.html" id="servicesDropdown">Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content-mobile" id="mobileDropdown">
+                            <a href="pages/bar.html">Bar Service</a>
+                            <a href="pages/restaurant.html">Restaurant Service</a>
+                            <a href="pages/club.html">Night Club Service</a>
+                            <a href="pages/events.html">Events Hosting</a>
+                            <a href="pages/internship.html">Industrial Training</a>
+                        </div>
+                    </li>
+                    <li><a href="pages/menu.html">Menu</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="mobile-social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <video class="hero-video" autoplay muted loop>
+            <source src="media/videos/karaoke.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="container hero-content">
+            <h1>Experience Tropical Luxury at Mango World</h1>
+            <p>Where every moment is infused with vibrant flavors, refreshing drinks, and unforgettable experiences.</p>
+            <div>
+              <div class="hero-btns">
+                    <a href="events.html" class="btn btn-gold">Book VIP Experience</a>
+                    <a href="menu.html" class="btn btn-green">Explore Our Menu</a>
+                </div>
+             </div>
+        </div>
+    </section>
+
+    <!-- Triple Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Discover Mango World</h2>
+                <p>Explore our vibrant atmosphere through these highlights</p>
+            </div>
+            
+            <div class="triple-gallery">
+
+                <!-- Recent Events -->
+                <div class="gallery-item">
+                    <div class="gallery-item-header">
+                        Recent Events
+                    </div>
+                    <div class="gallery-item-content">
+                        <div class="slideshow">
+                            <div class="slide active">
+                                <div class="event-slide">
+                                    <img src="media/images/love-shop1.jpg" alt="Love Shop" style="width:100%; height:150px; object-fit:cover; border-radius:5px; margin-bottom:15px;">
+                                    <h3>Love Shop</h3>
+                                    <p>There's been no better shop than the one carved in love.</p>
+                                    <div class="date">Feb 13, 2025</div>
+                                    <a href="love-shop.html" class="btn btn-green">View More...</a>
+                                </div>
+                            </div>
+                            
+                           <div class="slide">
+                           <div class="event-slide">
+                                    <img src="media/images/karaoke.jpg" alt="Shadrack Malu" style="width:100%; height:150px; object-fit:cover; border-radius:5px; margin-bottom:15px;">
+                                    <h3>Karaoke Night</h3>
+                                    <p>The day Mango World hosted some of the best Nigerian Vocalists</p>
+                                    <div class="date">April 20, 2025</div>
+                                    <a href="karaoke-night.html" class="btn btn-green">View More...</a>
+                                </div>
+                            </div>
+
+
+                            <div class="slide">
+                                <div class="event-slide">
+                                    <img src="media/images/bob-marley.jpg" alt="Bob Marley" style="width:100%; height:150px; object-fit:cover; border-radius:5px; margin-bottom:15px;">
+                                    <h3>Bob Marley Night</h3>
+                                    <p>The Old School Style has never been more thrilling.</p>
+                                    <div class="date">May 11, 2025</div>
+                                    <a href="bob-marley.html" class="btn btn-green">View More...</a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="event-slide">
+                                    <img src="media/images/valentine.jpg" alt="Valentine 2025" style="width:100%; height:150px; object-fit:cover; border-radius:5px; margin-bottom:15px;">
+                                    <h3>Valentine With Atela</h3>
+                                    <p>The air was filled <br> with love.</p>
+                                    <div class="date">Feb 14, 2025</div>
+                                    <a href="valentine-2025.html" class="btn btn-green">View More...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonials -->
+                <div class="gallery-item">
+                    <div class="gallery-item-header">
+                        Testimonials
+                    </div>
+                    <div class="gallery-item-content">
+                        <div class="slideshow">
+                            <div class="slide active">
+                                <div class="testimonial-slide">
+                                    <p class="quote">"Mango World is hands down the best entertainment spot in Makurdi. The atmosphere, drinks, and service are exceptional!"</p>
+                                    <p class="author">- John D.</p>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="testimonial-slide">
+                                    <p class="quote">"I hosted my birthday party here and it was perfect. The staff went above and beyond to make it special."</p>
+                                    <p class="author">- Sarah M.</p>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="testimonial-slide">
+                                    <p class="quote">"The mango mojito is to die for! I come here every weekend just for that drink."</p>
+                                    <p class="author">- David K.</p>
+                                </div>
+                            </div>
+ <div style="text-align: center; padding: 2px 5px; margin-top: 300px;">
+                <a href="about.html" class="btn btn-green">Discover Our Story</a>
+            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- Upcoming Events -->
+                <div class="gallery-item">
+                    <div class="gallery-item-header">
+                        Upcoming Events
+                    </div>
+                    <div class="gallery-item-content">
+                        <div class="slideshow">
+                            <div class="slide active">
+                                <div class="event-slide">
+                                    <img src="media/images/dj-night1.jpg" alt="Live DJ Night" style="width:100%; height:150px; object-fit:cover; border-radius:5px; margin-bottom:15px;">
+                                    <h3>Live DJ Night</h3>
+                                    <p>Experience the best music with our international DJ</p>
+                                    <div class="date">June 15, 2024</div>
+                                    <a href="dj-night.html" class="btn btn-green">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="event-slide">
+                                    <img src="media/images/mixologist.jpg" alt="Mixology Workshop" style="width:100%; height:150px; object-fit:cover; border-radius:5px; margin-bottom:15px;">
+                                    <h3>Mixology Workshop</h3>
+                                    <p>Learn to make signature cocktails from our master mixologist</p>
+                                    <div class="date">July 2, 2025</div>
+                                    <a href="mixology-workshop.html" class="btn btn-green">Learn More</a>
+                                </div>
+                            </div>
+                           
+                            <div class="slide">
+                                <div class="event-slide">
+                                    <img src="media/images/mango-festival.png" alt="Mango Festival" style="width:100%; height:150px; object-fit:cover; border-radius:5px; margin-bottom:15px;">
+                                    <h3>Mango Festival</h3>
+                                    <p>Celebrate the king of fruits with special mango-themed drinks and dishes</p>
+                                    <div class="date">July 5, 2024</div>
+                                    <a href="mango-festival.html" class="btn btn-green">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Mango World</h3>
+                    <p>Makurdi's premier luxury destination offering exceptional tropical experiences through vibrant flavors, premium service, and unforgettable moments.</p>
+                    <ul>
+                        <li><i class="fas fa-award"></i> Luxury Hospitality Award Winner 2025</li>
+                        <li><i class="fas fa-star"></i> Premium Tropical Experience</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="bar-service.html">Premium Bar Experience</a></li>
+                        <li><a href="restaurant-service.html">Gourmet Dining</a></li>
+                        <li><a href="nightclub-service.html">VIP Nightlife</a></li>
+                        <li><a href="events-hosting.html">Luxury Events</a></li>
+                        <li><a href="industrial-training.html">Professional Training</a></li>
+                        <li><a href="private-dining.html">Private Dining</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Beside NNPC Mega Station, Otukpo Road, Makurdi</li>
+                        <li><i class="fas fa-phone-alt"></i> +2349166385000</li>
+                        <li><i class="fas fa-envelope"></i> mangoworldnig@gmail.com</li>
+                        <li><i class="fab fa-whatsapp"></i> +2349166385000</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sun: 10AM - 2AM</li>
+                    </ul>
+                </div>
+            </div>
+            
+           <div class="footer-bottom">
+                <a href="privacy.html"><strong>Privacy Policy</strong></a> | <a href="terms.html"><strong>Terms of Service</strong></a>
+<p>&copy; 2024 Mango World. | All Rights Reserved. | Designed with <i class="fas fa-heart" style="color:#FFD700;"></i> in Makurdi</p> 
+Powered By <strong>MemberTechnologies</strong>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Floating Action Buttons -->
+    <div class="action-buttons">
+        <div class="action-btn whatsapp" title="">
+            <i class="fab fa-whatsapp"></i>
+            <span class="action-tooltip">Chat on WhatsApp</span>
+        </div>
+        <div class="action-btn chat" title="">
+            <i class="fas fa-comment-dots"></i>
+            <span class="action-tooltip">Live Chat Support</span>
+        </div>
+        <div class="action-btn book" title="">
+            <i class="fas fa-calendar-alt"></i>
+            <span class="action-tooltip">Book VIP Experience</span>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

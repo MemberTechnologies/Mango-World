@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Mango World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/services.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <a href="../index.html"><img src="../media/images/logo.jpg" alt="Mango World Logo"></a>
+                </div>
+                
+                <!-- Navigation container -->
+                <div class="nav-container">
+                    <nav>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li class="dropdown">
+                                <a href="services.html" class="active">Services <i class="fas fa-chevron-down"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="bar.html">Bar Service</a>
+                                    <a href="restaurant.html">Restaurant Service</a>
+                                    <a href="club.html">Night Club Service</a>
+                                    <a href="events.html">Events Hosting</a>
+                                    <a href="internship.html">Internship</a>
+                                </div>
+                            </li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            
+                            <!-- Search Container -->
+                            <div class="search-container">
+                                <div class="search-bar">
+                                    <input type="text" id="searchInput" placeholder="Search food, drinks, services...">
+                                    <button id="searchButton"><i class="fas fa-search"></i></button>
+                                </div>
+                                <div class="autocomplete-results" id="autocompleteResults"></div>
+                            </div>
+                            
+                            <!-- Cart and Checkout -->
+                            <li class="cart-checkout">
+                                <div class="cart-icon">
+                                    <a href="#" id="cartLink">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span class="cart-count">0</span>
+                                    </a>
+                                </div>
+                                <div class="checkout-btn">
+                                    <a href="#" id="checkoutLink">Checkout</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="social-container">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61572227197975" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Mobile Top Row -->
+                <div class="mobile-top">
+                    <div class="mobile-logo">
+                        <a href="../index.html"><img src="../media/images/logo.jpg" alt="Mango World Logo"></a>
+                    </div>
+                    
+                    <div class="mobile-search-container">
+                        <div class="search-bar">
+                            <input type="text" id="mobileSearchInput" placeholder="Search...">
+                            <button id="mobileSearchButton"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="autocomplete-results" id="mobileAutocompleteResults"></div>
+                    </div>
+                    
+                    <div class="cart-checkout">
+                        <div class="cart-icon">
+                            <a href="#" id="mobileCartLink">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="cart-count">0</span>
+                            </a>
+                        </div>
+                        <div class="checkout-btn">
+                            <a href="#" id="mobileCheckoutLink">Checkout</a>
+                        </div>
+                    </div>
+                    
+                    <button class="menu-toggle" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-menu-header">
+                    <h3>Menu</h3>
+                    <button class="mobile-menu-close" id="mobileMenuClose">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown-mobile">
+                        <a href="services.html  class="active" id="servicesDropdown">Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content-mobile" id="mobileDropdown">
+                            <a href="bar.html">Bar Service</a>
+                            <a href="restaurant.html">Restaurant Service</a>
+                            <a href="club.html">Night Club Service</a>
+                            <a href="events.html">Events Hosting</a>
+                            <a href="industrial-training.html">	nternship</a>
+                        </div>
+                    </li>
+                    <li><a href="menu.html"">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="mobile-social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+  
+
+    <!-- Services Section -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Premium Services</h2>
+                Experience luxury in every aspect
+            </div>
+            
+            <div class="services-grid">
+                <!-- Bar Service -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="../media/images/bar.jpg" alt="Bar Service">
+                    </div>
+                    <div class="service-content">
+                        <h3>Bar Service</h3>
+                        <p>Enjoy our extensive selection of beverages from our General Bar and Mixology Bar, featuring classic and innovative cocktails.</p>
+                        <a href="bar.html" class="btn">Explore Service</a>
+                    </div>
+                </div>
+                
+                <!-- Restaurant Service -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="../media/images/restaurant.jpg" alt="Restaurant Service">
+                    </div>
+                    <div class="service-content">
+                        <h3>Restaurant Service</h3>
+                        <p>Indulge in our diverse menu featuring local and international cuisine prepared with the freshest ingredients.</p>
+                        <a href="restaurant.html" class="btn">Explore Service</a>
+                    </div>
+                </div>
+                
+                <!-- Night Club Service -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="../media/images/club.jpg" alt="Night Club Service">
+                    </div>
+                    <div class="service-content">
+                        <h3>Night Club Service</h3>
+                        <p>Dance the night away with our state-of-the-art sound system and regular performances by top DJs.</p>
+                        <a href="club.html" class="btn">Explore Service</a>
+                    </div>
+                </div>
+                
+                <!-- Events Hosting -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="../media/images/events.jpg" alt="Events Hosting">
+                    </div>
+                    <div class="service-content">
+                        <h3>Events Hosting</h3>
+                        <p>Host your special events with us - weddings, birthdays, corporate events, and more in our beautiful event spaces.</p>
+                        <a href="events.html" class="btn">Explore Service</a>
+                    </div>
+                </div>
+                
+                <!-- Industrial Training -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="../media/images/internship.jpg" alt="Industrial Training">
+                    </div>
+                    <div class="service-content">
+                        <h3>Industrial Training</h3>
+                        <p>Learn from the best with our professional training programs in mixology, bartending, and hospitality management.</p>
+                        <a href="industrial-training.html" class="btn">Explore Service</a>
+                    </div>
+                </div>
+                
+                <!-- Private Events -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="../media/images/VIP.jpg" alt="Private Events">
+                    </div>
+                    <div class="service-content">
+                        <h3>VIP Experiences</h3>
+                        <p>Elevate your visit with our premium VIP services including private booths, bottle service, and personalized attention.</p>
+                        <a href="#vip" class="btn">Explore Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Booking Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Book Your Experience</h2>
+                Reserve your table or event today
+            </div>
+            
+            <div class="contact-form" style="max-width: 800px; margin: 0 auto;">
+                <form id="bookingForm">
+                    <div class="form-group">
+                        <label for="service">Select Service</label>
+                        <select id="service" name="service" class="form-group input" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                            <option value="">Choose a service</option>
+                            <option value="bar">Bar Service</option>
+                            <option value="restaurant">Restaurant Service</option>
+                            <option value="nightclub">Night Club</option>
+                            <option value="event">Event Hosting</option>
+                            <option value="training">Industrial Training</option>
+                            <option value="vip">VIP Experience</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group" style="display: flex; gap: 20px;">
+                        <div style="flex: 1;">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div style="flex: 1;">
+                            <label for="time">Time</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group" style="display: flex; gap: 20px;">
+                        <div style="flex: 1;">
+                            <label for="guests">Number of Guests</label>
+                            <input type="number" id="guests" name="guests" min="1" required>
+                        </div>
+                        <div style="flex: 1;">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="special-requests">Special Requests</label>
+                        <textarea id="special-requests" name="special-requests"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-green">Submit Booking Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Mango World</h3>
+                    <p>Makurdi's premier luxury destination offering exceptional tropical experiences through vibrant flavors, premium service, and unforgettable moments.</p>
+                    <ul>
+                        <li><i class="fas fa-award"></i> Luxury Hospitality Award Winner 2025</li>
+                        <li><i class="fas fa-star"></i> Premium Tropical Experience</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="bar.html">Premium Bar Experience</a></li>
+                        <li><a href="restaurant.html">Gourmet Dining</a></li>
+                        <li><a href="club.html">VIP Nightlife</a></li>
+                        <li><a href="events.html">Luxury Events</a></li>
+                        <li><a href="industrial-training.html">Professional Training</a></li>
+                        <li><a href="private-dining.html">Private Dining</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Beside NNPC Mega Station, Otukpo Road, Makurdi</li>
+                        <li><i class="fas fa-phone-alt"></i> +2349166385000</li>
+                        <li><i class="fas fa-envelope"></i> mangoworldnig@gmail.com</li>
+                        <li><i class="fab fa-whatsapp"></i> +2349166385000</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sun: 10AM - 2AM</li>
+                    </ul>
+                </div>
+            </div>
+            
+           <div class="footer-bottom">
+                <a href="privacy.html"><strong>Privacy Policy</strong></a> | <a href="terms.html"><strong>Terms of Service</strong></a>
+<p>&copy; 2024 Mango World. | All Rights Reserved. | Designed with <i class="fas fa-heart" style="color:#FFD700;"></i> in Makurdi</p> 
+Powered By <strong>MemberTechnologies</strong>
+            </div>
+        </div>
+    </footer>
+
+
+     <!-- Floating Action Buttons -->
+    <div class="action-buttons">
+        <div class="action-btn whatsapp" title="">
+            <i class="fab fa-whatsapp"></i>
+            <span class="action-tooltip">Chat on WhatsApp</span>
+        </div>
+        <div class="action-btn chat" title="">
+            <i class="fas fa-comment-dots"></i>
+            <span class="action-tooltip">Live Chat Support</span>
+        </div>
+        <div class="action-btn book" title="">
+            <i class="fas fa-calendar-alt"></i>
+            <span class="action-tooltip">Book VIP Experience</span>
+        </div>
+    </div>
+
+    <script src="../js/services.js"></script>
+</body>
+</html>
